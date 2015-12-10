@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos elementos (Formulario)</title>
+</head>
+<body>
+	<h1>Nuevos elementos (Formulario)</h1>
+	<hr>
+	<!-- ::::::::::::::::: -->
+	<fieldset><legend><h3>Lista de datos</h3></legend>
+		<input list="lenguajes">
+		<datalist id="lenguajes">
+			<option value="python">Python</option>
+			<option value="ruby">Ruby</option>
+			<option value="php">php</option>
+			<option value="csharp">C#</option>
+			</datalist>
+	</fieldset>
+		<!-- ::::::::::::::: -->
+		<fieldset>
+		<legend><h3>Generador de llaves</h3></legend>
+		<keygen name="name" challenge="string" keytype="RSA" keyparams="medium">
+	    </fieldset> 
+	    <!-- :::::::::::::::::::::::::::::: -->
+	    <fieldset>
+	    	<legend><h3>Salida</h3></legend>
+	    	<input type="range"  min="1" max="100" oninput="salida.value=this.value">
+	    </fieldset>
+</body>
+</html>

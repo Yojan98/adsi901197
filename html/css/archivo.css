@@ -8,20 +8,21 @@ h1 {
 	margin: 100px auto;
 	text-align: center;
 	width: 600px;
-	
+
 	-webkit-animation: 2s animTitulo ease-in-out infinite;
 }
+
 @-webkit-keyframes animTitulo {
-	0%{
+	0% { 
 		opacity: 0.5;
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(1); 
 	}
-	50% {
+	50% { 
 		opacity: 1;
-		-webkit-transform: scale(1.2);
+		-webkit-transform: scale(1.2); 
 	}
-	100% {
+	100% { 
 		opacity: 0.5;
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(1); 
 	}
 }

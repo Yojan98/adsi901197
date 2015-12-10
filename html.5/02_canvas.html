@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<h1>Canvas</h1>
+	<hr>
+	<h3>Cuadrado</h3>
+	<canvas id="Cuadrado"></canvas>
+	<h3>Circulo</h3>
+	<canvas id="Circulo"></canvas>
+	<h3>Triangulo</h3>
+	<canvas id="Triangulo"></canvas>
+	<h3>Texto</h3>
+	<canvas id="Texto"></canvas>
+	<h3>Estrella</h3>
+	<canvas id="Estrella"></canvas>
+	<script>
+	var canvas1    = document.getElementById('Cuadrado');
+	var canvas2    = document.getElementById('Circulo');
+	var canvas3    = document.getElementById('Triangulo');
+	var canvas4    = document.getElementById('Texto');
+	var canvas5    = document.getElementById('Estrella');
+
+	var ctx1       = canvas1.getContext('2d');
+	var ctx2       = canvas2.getContext('2d');
+	var ctx3       = canvas3.getContext('2d');
+	var ctx4       = canvas4.getContext('2d');
+	var ctx5       = canvas5.getContext('2d');
+
+	//cuadrado
+	ctx1.fillStyle = '#00f';
+	ctx1.fillRect (0, 0, 150, 150); 
+	//circulo
+	ctx2.fillStyle = '#0f0';
+	ctx2.beginPath();
+	ctx2.arc (60, 60, 60, 0, Math.PI*2, true);
+	ctx2.closePath();
+	ctx2.fill();
+	//triangulo
+	ctx3.fillStyle = '#f70';     
+	ctx3.beginPath();
+	ctx3.moveTo(10, 110);
+	ctx3.lineTo(110, 10);
+	ctx3.lineTo(210, 110);
+	ctx3.closePath();
+	ctx3.fill();
+	//Texto
+	ctx4.fillStyle = '#093';
+	ctx4.font = "60px Tahoma";
+	ctx4.fillText("Yojan", 20, 80);
+	ctx4.rect(0, 0, 200, 120);
+	ctx4.stroke();
+	//estrella
+	ctx5.fillStyle = '#f00';
+	ctx5.translate(50, 100);
+	ctx5.rotate((Math.PI * 1 / 10));
+	for (var i = 5; i--;) {
+		ctx5.lineTo(0, 50);
+		ctx5.translate(0, 50);
+		ctx5.rotate((Math.PI * 2 / 10));
+		ctx5.lineTo(0, -50);
+		ctx5.translate(0, -50);
+		ctx5.rotate(-(Math.PI * 6 / 10));
+	}
+	ctx5.lineTo(0, 50);
+	ctx5.closePath();
+	ctx5.fill();
+	ctx5.stroke();
+	
+	
+
+	</script>
+</body>
+</html>

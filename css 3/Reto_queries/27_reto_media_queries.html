@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Queries (Imagenes)</title>
+	<style>
+	
+	 main{
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      
+    }
+    article{
+      border: 4px solid #ccc;
+      display: inline-block;
+      margin: 0px 20px 20px 0px;
+      height: 560px;
+      padding: 10px;
+      vertical-align: top;
+      width: 400px;
+      background: black;
+      color: white;
+
+      }
+
+	body { background-color: black;}
+	section.page {
+		background: url(Imgs/dra1.png) no-repeat center center;
+		height: 354px;
+		margin: 20px auto;
+		text-align: center;
+		width: 919px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	@media (max-width: 926px) { 
+	section.page {
+		background: url(Imgs/dra2.png) no-repeat center center;
+		height: 371px;
+		margin: 20px auto;
+		text-align: center;
+		width: 349px;
+		}
+	}
+	@media (max-width: 510px){
+		section.page {
+			background: url(Imgs/yio.png) no-repeat center center;
+			height: 156px;
+			margin: 20px auto;
+			text-align: center;
+			width: 162px;
+		}
+	}
+	.o-hidden{overflow: hidden;}
+	img.tran1 {
+			-webkit-transition: all 0.5s ease-in;
+		}
+		img.tran1:hover {
+			cursor: pointer;
+			-webkit-transform: rotate(360deg) scale(1.2);
+		}
+		article h1{
+			background-color: #000;
+			padding: 20px;
+			margin: 4px;
+			width: 200px;
+			-webkit-transition: all 0.2s ease-in-out;
+		}
+		article h1:hover{
+			width: 550px;
+		}
+
+	</style>
+</head>
+<body>
+	<section class="page">
+		
+	</section>
+	<main>
+	<article class="o-hidden">
+		<h1>Gokú</h1>
+		<img class="tran1" src="Imgs/goku1.jpg" height="318" width="300" display: "inline-block">
+		<p align="justify">En un inicio Gokú aparece como un joven artista marcial con cola de mono y fuerza sobrehumana, más adelante en la historia se revela que es un extraterrestre de la raza ficticia saiyajin (o saiyan) y que su nombre originalmente era Kakarotto.</p>
+	</article>
+	<article class="o-hidden">
+		<h1>Gohan</h1>
+		<img class="tran1"src="Imgs/gohan.jpg" height="318" width="300" display: "inline-block">
+		<p align="justify">Es un personaje de ficción del manga Dragon Ball y del anime Dragon Ball Z y Dragon Ball GT. Es mitad Saiyajin y mitad humano. El nombre de Gohan es un juego de palabras entre la palabra "gohan" (, comida, arroz en japonés) y el nombre de su padre, Son Gokū .</p>
+	</article>
+	<article class="o-hidden">
+		<h1>Piccolo</h1>
+		<img class="tran1" src="Imgs/picolo.jpg" height="318" width="300" display: "inline-block">
+		<p align="justify">Es un personaje de ficción de la serie de manga y anime Dragon Ball. Su padre, Piccolo Daimaō, surgió tras separarse de Kamisama, así, si uno de los dos muere, el otro también. Odia a su alter ego, aunque es mucho más fuerte y menos malvado que su padre (sin perjuicio de que es propenso a accesos de ira o parte debido a su entrenamiento con Son Gohan.</p>
+	</article>
+	<article class="o-hidden">
+		<h1>Mono Vegeta (Ozaru)</h1>
+		<img class="tran1" src="Imgs/mono.jpg" height="318" width="300" display: "inline-block">
+		<p align="justify">Es una habilidad especial de algunos personajes del manga y anime Dragon Ball. Esta habilidad les permite a los saiyajin con su cola intacta convertirse en un simio gigante si se exponen a la luz de la Luna llena, lo cual multiplica su poder diez veces.</p>
+	</article>
+	<article class="o-hidden">
+		<h1>Personajes</h1>
+		<img class="tran1"src="Imgs/ep.png" height="318" width="300" display: "inline-block">
+		<p align="justify">Su trama describe las aventuras de Gokū, un guerrero saiyajin, cuyo fin es proteger a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad. Conforme transcurre la trama, conoce a otros personajes que le ayudan en este propósito. El nombre de la serie proviene de unas esferas mágicas que, una vez reunidas, invocan a un dragón que concede deseos. En varias ocasiones resultan útiles tanto para Gokū y sus amigos como para la humanidad, aunque también son procuradas de forma constante por algunos seres que quieren emplearlas con fines malignos.</p>
+	</article>
+	<article class="o-hidden">
+		<h1>Vegeta</h1>
+		<img class="tran1" src="Imgs/veg.jpg" height="318" width="300" display: "inline-block">
+		<p align="justify">Es un personaje ficticio perteneciente a la raza llamada saiyajin, del manga y anime Dragon Ball. Su nombre proviene de su padre, el Rey Vegeta, así como de su planeta de origen, el cual recibió su nombre tras su conquista por parte de los saiyajin.</p>
+	</article>
+	</main>
+	
+</body>
+</html>

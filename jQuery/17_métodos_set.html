@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Métodos SET (jQuery)</title>
+</head>
+<body>
+	<h1>Real madrid avanzo a semifinales</h1>
+	<hr>
+	<article>
+		<p>
+			<input type="text" id="nombre" placeholder="Equipo contra que quieres que juegue">
+		</p>
+		<h1 id="titulo">Que piensas del real</h1>
+		<p id="texto">El Real Madrid logró la esperada remontada frente al Wolfsburgo en el partido de vuelta de los cuartos de final de la Champions League. Cristiano Ronaldo tuvo una noche mágica y anotó los tres tantos que le permitieron al conjunto 'merengue' clasificar a las semifinales del torneo más importante de clubes en el mundo.
+		</p>
+		<p>
+			<a href="https://www.google.com">Síguenos</a>
+		</p>
+	</article>
+	<button id="btnSet">Asignar Texto</button>
+	<button id="btnHtml">Asignar Html</button>
+	<button id="btnValue">Asignar Valor</button>
+	<button id="btnAttr">Asignar Atributo (href)</button>
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script>
+	$(document).ready(function() {
+
+		$('input').keyup(function(event) {
+			$('h1#titulo').text('El real jugar contra el equipo ' +$(this).val()); //SET / GET
+		});
+		// ---------------------
+		$('#btnSet').click(function(event) {
+			$('#texto').text('El Real Madrid lo logró.'); // SET
+		});
+		$('#btnHtml').click(function(event){
+			$('article').html('<ul><li>Rojo</li><li>Verde</li></ul>'); // SET
+		});
+		$('#btnValue').click(function(event) {
+			$('input').val('REAL MADRID');
+		});
+		$('#btnAttr').click(function(event) {
+			$('a').attr('href', 'https://twitter.com/YojanGutierrez'); // SET
+		});
+	});
+
+
+	</script>
+</body>
+</html>

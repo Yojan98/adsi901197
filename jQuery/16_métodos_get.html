@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Métodos GET (jQuery)</title>
+</head>
+<body>
+	<h1>Métodos GET (jQuery)</h1>
+	<hr>
+	<article>
+		<p>
+			<input type="text" id="nombre" placeholder="Ingrese nombre">
+		</p>
+		<h1 id="title">Bienvenido Pues!</h1>
+		<p id="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempora eligendi saepe omnis, perferendis unde dolores, neque commodi explicabo inventore quae recusandae eos rerum itaque eaque nihil amet accusantium earum.
+		</p>
+		<p>
+			<a href="http://www.google.com">Buscar Información</a>
+		</p>
+	</article>
+	<button id="btnGet">Obtener Texto</button>
+	<button id="btnHtml">Obtener Html</button>
+	<button id="btnValue">Obtener Valor</button>
+	<button id="btnAttr">Obtener Atributo (href)</button>
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script>
+	$(document).ready(function() {
+
+		$('input').keyup(function(event) {
+			$('#title').text('Bienvenido'+$(this).val()); //SET / GET
+		});
+		// ---------------------
+		$('#btnGet').click(function(event) {
+			alert($('#texto').text()); // GET
+		});
+		$('#btnHtml').click(function(event){
+			alert($('article').html()); // GET
+		});
+		$('#btnValue').click(function(event) {
+			alert($('input').val());
+		});
+		$('#btnAttr').click(function(event) {
+			alert($('a').attr('href')); // GET
+		});
+	});
+
+
+	</script>
+</body>
+</html>
